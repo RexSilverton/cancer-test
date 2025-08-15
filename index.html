@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEU Journalists Club Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <img src="Adobe_Express_-_file.png" alt="SEU Journalists Club Logo" />
+      <h2>SEU Journalists Club</h2>
+      <form id="club-form">
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+          required
+        />
+
+        <label for="program">Program:</label>
+        <input
+          type="text"
+          id="program"
+          name="program"
+          placeholder="Enter your program"
+          required
+        />
+
+        <label for="batch">Batch:</label>
+        <input
+          type="text"
+          id="batch"
+          name="batch"
+          placeholder="Enter your batch"
+          required
+        />
+
+        <label for="student-id">Student ID:</label>
+        <input
+          type="text"
+          id="student-id"
+          name="id"
+          placeholder="Enter your student ID"
+          required
+        />
+
+        <label for="blood">Blood Group:</label>
+        <select id="blood" name="blood" required>
+          <option value="">Select your blood group</option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">Select your gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+        </select>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          placeholder="Enter your address"
+          required
+        />
+
+        <label for="join-club">Do you want to join our club?</label>
+        <select id="join-club" name="join_club" required>
+          <option value="">Select</option>
+          <option value="Yes">Yes</option>
+          <option value="No">No</option>
+        </select>
+
+        <label for="know-about">How did you hear about our club?</label>
+        <select id="know-about" name="know_about_club" required>
+          <option value="">Select</option>
+          <option value="Friends or family">Friends or family</option>
+          <option value="Facebook page/Website">Facebook page/Website</option>
+          <option value="University notice board">
+            University notice board
+          </option>
+          <option value="Club event">Club event</option>
+          <option value="Faculty/Teacher">Faculty/Teacher</option>
+          <option value="Other">Other</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <p id="form-message" class="hidden"></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
